@@ -94,6 +94,7 @@ header {
   grid-template-rows: repeat(2,480px);
 
   .box{
+    background-color: $blue-white;
     img{
       width: 100%;
       height: 100%;
@@ -106,32 +107,15 @@ header {
     }
   }
   
-  .box-2{
-    
-  }
-  
   .box-3{
     img{
       object-fit: cover;
-    }
-    
+    }  
   }
-  
-  .box-4{
-    
-  }
-  
-  .box-5{   
-  }
-  
   .box-6{  
     img{
       object-fit: cover;
     }
-  }
-  
-  .box-7{
-    
   }
   
   .box-8{
@@ -140,6 +124,106 @@ header {
     }
   }
 
+  .box .box-data{
+    margin: 162px 0 0 99px;
+    
+    .box-heading{
+      font-size: 1.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1875rem;
+      position: relative;
+    }
+
+    .box-heading::after{
+      content: "";
+      position: absolute;
+      width: 3.75rem;
+      height: .125rem;
+      background-color: $dark-brown;
+      border-radius: .125rem;
+      bottom: -30%;
+      left: .125rem;
+    }
+
+    .box-para{
+      font-size: .875rem;
+      font-weight: 400;
+      color: $light-font;
+      line-height: 1.625rem;
+      margin-right: 6.1875rem;
+      margin-top: 1.06rem;
+    }
+  }
+
 }
 
+#section-two{
+  width: 90rem;
+  height: 71.5625rem;
+  margin-top: 7rem;
+  margin-inline:auto;
+
+  .box-top-heading{
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 4.375rem;
+    
+    p{
+      color: $light-brown;
+      font-size: 1.125rem;
+    }
+
+    h4{
+      color: $black-color;
+      font-size: 2.5rem;
+    }
+  }
+
+  .card-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 463px);
+    grid-row-gap: 70px;
+    grid-column-gap: 20px;
+
+    .card-item{
+      background-color: $blue-white;
+      cursor: pointer;
+
+      .image{
+        height: 389px;
+        width: 345px;
+        overflow: hidden;
+        
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 0.2s all ease-in;
+          background-position: center;
+        }
+
+        img:hover{
+          scale: 1.07;
+          filter: brightness(70%);
+        }
+      }
+
+      .card-data{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p:nth-child(1){
+          margin-top: 20px;
+        }
+        p:nth-child(2){
+          color: $light-font
+        }
+      }
+    }
+  }
+}
 
