@@ -22,7 +22,7 @@ header {
   .logo-text {
     color: $black-color;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 600;
     span {
       color: $light-brown;
@@ -33,7 +33,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0 0 3.125rem;
+    padding: 0 0 0 50px;
   }
 
   .nav-items {
@@ -42,7 +42,7 @@ header {
 
     .nav-item {
       list-style: none;
-      padding: 1.56rem;
+      padding: 24.96px;
 
       .nav-link {
         text-decoration: none;
@@ -60,7 +60,7 @@ header {
 
   .hero-image{
     width: 100%;
-    height: 55rem;
+    height: 880px;
     overflow: hidden;
     background-image: linear-gradient($white-color,$black-color);
     position: relative;
@@ -73,7 +73,7 @@ header {
     .heading-text{
       position: absolute;
       text-align: center;
-      font-size: 7.5rem;
+      font-size: 120px;
       font-weight: 300;
       user-select: none;
       top: 50%;
@@ -91,7 +91,7 @@ header {
 
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(2,480px);
+  grid-template-rows: repeat(2,30rem);
 
   .box{
     background-color: $blue-white;
@@ -125,75 +125,75 @@ header {
   }
 
   .box .box-data{
-    margin: 162px 0 0 99px;
+    margin: 10.125rem 0 0 6.1875rem;
     
     .box-heading{
-      font-size: 1.75rem;
+      font-size: 28px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: .1875rem;
+      letter-spacing: 3px;
       position: relative;
     }
 
     .box-heading::after{
       content: "";
       position: absolute;
-      width: 3.75rem;
-      height: .125rem;
+      width: 60px;
+      height: 2px;
       background-color: $dark-brown;
-      border-radius: .125rem;
+      border-radius: 2px;
       bottom: -30%;
-      left: .125rem;
+      left: 2px;
     }
 
     .box-para{
-      font-size: .875rem;
+      font-size: 14px;
       font-weight: 400;
       color: $light-font;
-      line-height: 1.625rem;
-      margin-right: 6.1875rem;
-      margin-top: 1.06rem;
+      line-height: 26px;
+      margin-right: 99px;
+      margin-top: 16.96px;
     }
   }
 
 }
 
 #section-two{
-  width: 90rem;
-  height: 71.5625rem;
-  margin-top: 7rem;
+  width: 1440px;
+  height: 1145px;
+  margin-top: 112px;
   margin-inline:auto;
 
   .box-top-heading{
     margin-top: 0;
     text-align: center;
-    margin-bottom: 4.375rem;
+    margin-bottom: 70px;
     
     p{
       color: $light-brown;
-      font-size: 1.125rem;
+      font-size: 18px;
     }
 
     h4{
       color: $black-color;
-      font-size: 2.5rem;
+      font-size: 40px;
     }
   }
 
   .card-items{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 463px);
-    grid-row-gap: 70px;
-    grid-column-gap: 20px;
+    grid-template-rows: repeat(2, 28.9375rem);
+    grid-row-gap: 4.375rem;
+    grid-column-gap: 1.25rem;
 
     .card-item{
       background-color: $blue-white;
       cursor: pointer;
 
       .image{
-        height: 389px;
-        width: 345px;
+        height: 24.3125rem;
+        width: 21.5625rem;
         overflow: hidden;
         
         img{
@@ -217,7 +217,7 @@ header {
         flex-direction: column;
 
         p:nth-child(1){
-          margin-top: 20px;
+          margin-top: .9375rem;
         }
         p:nth-child(2){
           color: $light-font
@@ -227,3 +227,22 @@ header {
   }
 }
 
+#section-three{
+  width: 90.3125rem;
+  height: 15.625rem;
+  margin-inline: auto;
+  margin-top: 112px;
+  border: .125rem solid $blue-white;
+  border-radius: 5px;
+  padding: 20px;
+
+  margin-bottom: 200px;
+
+  .banner{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-color: $blue-white;
+  }
+
+}
