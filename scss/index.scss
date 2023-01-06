@@ -22,8 +22,9 @@ header {
   .logo-text {
     color: $black-color;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
+    user-select: none;
     span {
       color: $light-brown;
     }
@@ -33,7 +34,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 3.125rem;
   }
 
   .nav-items {
@@ -42,7 +43,7 @@ header {
 
     .nav-item {
       list-style: none;
-      padding: 24.96px;
+      padding: 1.56rem;
 
       .nav-link {
         text-decoration: none;
@@ -60,7 +61,7 @@ header {
 
   .hero-image{
     width: 100%;
-    height: 880px;
+    height: 55rem;
     overflow: hidden;
     background-image: linear-gradient($white-color,$black-color);
     position: relative;
@@ -73,7 +74,7 @@ header {
     .heading-text{
       position: absolute;
       text-align: center;
-      font-size: 120px;
+      font-size: 7.5rem;
       font-weight: 300;
       user-select: none;
       top: 50%;
@@ -91,7 +92,7 @@ header {
 
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(2,30rem);
+  grid-template-rows: repeat(2,480px);
 
   .box{
     background-color: $blue-white;
@@ -125,75 +126,75 @@ header {
   }
 
   .box .box-data{
-    margin: 10.125rem 0 0 6.1875rem;
+    margin: 162px 0 0 99px;
     
     .box-heading{
-      font-size: 28px;
+      font-size: 1.75rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 3px;
+      letter-spacing: .1875rem;
       position: relative;
     }
 
     .box-heading::after{
       content: "";
       position: absolute;
-      width: 60px;
-      height: 2px;
+      width: 3.75rem;
+      height: .125rem;
       background-color: $dark-brown;
-      border-radius: 2px;
+      border-radius: .125rem;
       bottom: -30%;
-      left: 2px;
+      left: .125rem;
     }
 
     .box-para{
-      font-size: 14px;
+      font-size: .875rem;
       font-weight: 400;
       color: $light-font;
-      line-height: 26px;
-      margin-right: 99px;
-      margin-top: 16.96px;
+      line-height: 1.625rem;
+      margin-right: 6.1875rem;
+      margin-top: 1.06rem;
     }
   }
 
 }
 
 #section-two{
-  width: 1440px;
-  height: 1145px;
-  margin-top: 112px;
+  width: 90rem;
+  height: 71.5625rem;
+  margin-top: 7rem;
   margin-inline:auto;
 
   .box-top-heading{
     margin-top: 0;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 4.375rem;
     
     p{
       color: $light-brown;
-      font-size: 18px;
+      font-size: 1.125rem;
     }
 
     h4{
       color: $black-color;
-      font-size: 40px;
+      font-size: 2.5rem;
     }
   }
 
   .card-items{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 28.9375rem);
-    grid-row-gap: 4.375rem;
-    grid-column-gap: 1.25rem;
+    grid-template-rows: repeat(2, 463px);
+    grid-row-gap: 70px;
+    grid-column-gap: 20px;
 
     .card-item{
       background-color: $blue-white;
       cursor: pointer;
 
       .image{
-        height: 24.3125rem;
-        width: 21.5625rem;
+        height: 389px;
+        width: 345px;
         overflow: hidden;
         
         img{
@@ -217,7 +218,7 @@ header {
         flex-direction: column;
 
         p:nth-child(1){
-          margin-top: .9375rem;
+          margin-top: 15px;
         }
         p:nth-child(2){
           color: $light-font
@@ -228,21 +229,135 @@ header {
 }
 
 #section-three{
-  width: 90.3125rem;
-  height: 15.625rem;
+  width: 1445px;
+  height: 250px;
   margin-inline: auto;
-  margin-top: 112px;
-  border: .125rem solid $blue-white;
-  border-radius: 5px;
-  padding: 20px;
-
-  margin-bottom: 200px;
+  margin-top: 7rem;
+  border: 2px solid $blue-white;
+  border-radius: .3125rem;
+  padding: 1.25rem;
 
   .banner{
     height: 100%;
     width: 100%;
-    border-radius: 5px;
+    border-radius: .3125rem;
     background-color: $blue-white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .banner-img{
+        height: 9.375rem;
+        object-fit: cover;
+        background-repeat: no-repeat;
+      }
+      
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 1.25rem;
+        }
+
+    .banner-text{
+      text-align: center;
+      h3{
+        font-weight: 300;
+        font-size: 38px;
+        text-transform: uppercase;
+        margin-bottom: .625rem;
+      }
+      a{
+        text-decoration: none;
+        color: $white-black;
+        font-weight: 400;
+        text-transform: uppercase;
+        position: relative;
+      }
+
+      a::after{
+        content: "";
+        position: absolute;
+        width: 5rem;
+        height: .125rem;
+        bottom: -10%;
+        right: 50%;
+        transform: translate(50%,50%);
+        background-color: $white-black;
+      }
+    }
+    
   }
 
+}
+
+#section-four{
+ width: 90rem;
+ height: 61.25rem;
+ margin-inline: auto;
+ margin-top: 85px;
+
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ grid-template-columns: repeat(2,1fr);
+ grid-gap: 1.25rem;
+ 
+ .grid-item{
+   img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center;
+    }
+
+    position: relative;
+    background-color: $blue-white;
+    
+    .under-box{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 5.375rem;
+      width: 18.125rem;
+      background-color: $white-color;
+      font-weight: 600;
+      font-size: 1.75rem;
+      font-family: $Jakartha;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+ }
+
+ .grid-item:nth-child(1){
+  width: 44.375rem;
+  height: 480px;
+ }
+
+ .grid-item:nth-child(2){
+  width: 44.375rem;
+  height: 30rem;
+ }
+
+ .grid-item:nth-child(3){
+  width: 44.375rem;
+  height: 30rem;
+ }
+
+ .grid-item:nth-child(4){
+  width: 44.375rem;
+  height: 30rem;
+ }
+
+}
+
+#section-five{
+  width: 102.5rem;
+  height: 38.25rem;
+  margin-top: 85px;
+  background-color: $blue-white;
+  border: 1px dashed red;
+  margin-inline: auto;
+  margin-bottom: 100px;
 }
