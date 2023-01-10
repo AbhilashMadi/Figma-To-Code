@@ -355,9 +355,61 @@ header {
 #section-five{
   width: 102.5rem;
   height: 38.25rem;
-  margin-top: 85px;
+  margin-top: 6.4375rem;
   background-color: $blue-white;
-  border: 1px dashed red;
   margin-inline: auto;
-  margin-bottom: 100px;
+}
+
+#section-six{
+ margin-top: 6.437rem;
+ margin-bottom: 200px;
+ width: 100%;
+ height: 32.625rem;
+ background-color: $light-brown;
+ position: relative;
+ overflow: hidden;
+ object-fit: cover;
+ object-position: top;
+
+ .items{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  .item{
+    width: 12.68rem;
+    min-height: 12.25rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .icon{
+      width: 6.75rem;
+      height: 6.75rem;
+      border: 2px solid white;
+      border-radius: 50%;
+      @include flex;
+    }
+
+    .detail{
+      text-align: center;
+      margin-top: .9375rem;
+
+      h4{
+        color: $white-color;
+      }
+
+      p{
+        font-size: 0.8rem;
+        margin-top: .5rem;
+        color: $white-color;
+      }
+    }
+  }
+ }
+
 }

@@ -7,3 +7,9 @@ $light-font: #9A9A9A;
 $dark-brown: rgb(80, 0, 0);
 $blue-white: #f3f3f3;
 $Jakartha :'Plus Jakarta Sans', sans-serif;
+
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
